@@ -6,7 +6,7 @@ def example_generator(student_list):
     i = 0
     while True:
         if i < len(student_list):
-            yield print(student_list[i].view_inf())
+            yield student_list[i].view_inf()
             i += 1
 
 
@@ -21,7 +21,5 @@ if __name__ == "__main__":
     for i in example_generator(student_list):
         print(i)
 
-    # gener = (gen for gen in example_generator(student_list))
-    # for i in gener:
-    #     print(i)
+
 
