@@ -12,8 +12,15 @@ def example_generator(student_list):
             break
 
 
-def example_generator_1(student_list):
-    yield print(student_list.view_inf())
+def tmp_gen():
+    for i in range(4):
+        yield i
+
+
+def example_generator_in_another_generator(student_list):
+    yield "List with studenst:"
+    yield from example_generator(student_list)
+    yield "\nEnds list with students."
 
 
 if __name__ == "__main__":
@@ -23,11 +30,25 @@ if __name__ == "__main__":
     for i in example_generator(student_list):
         print(i)
 
-    # gen = example_generator(student_list)
+    # gen = example_generator(student_list)K
     # print(next(gen))
     # print(next(gen))
     # print(next(gen))
     # print(next(gen))
-    # print(next(gen))
+    # print(next(gen)) # That "next" method only raise StopIteration.
+
+    # for i in example_generator_in_another_generator(student_list):
+    #     print(i)
+
+    # exa_gen = example_generator_in_another_generator(student_list)
+    # print(next(exa_gen))
+    # print(next(exa_gen))
+    # print(next(exa_gen))
+    # print(next(exa_gen))
+    # print(next(exa_gen))
+    # print(next(exa_gen))
+    # print(next(exa_gen))
+    # print(next(exa_gen)) # That "next" method only raise StopIteration.
+
 
 
