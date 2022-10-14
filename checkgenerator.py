@@ -8,6 +8,8 @@ def example_generator(student_list):
         if i < len(student_list):
             yield student_list[i].view_inf()
             i += 1
+        else:
+            break
 
 
 def example_generator_1(student_list):
@@ -21,5 +23,11 @@ if __name__ == "__main__":
     for i in example_generator(student_list):
         print(i)
 
+    # gen = example_generator(student_list)
+    # print(next(gen))
+    # print(next(gen))
+    # print(next(gen))
+    # print(next(gen))
+    # print(next(gen))
 
 
