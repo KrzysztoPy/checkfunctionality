@@ -68,5 +68,6 @@ class_1cT.adding_to_class_list(s2)
 class_1cT.adding_to_class_list(s3)
 class_1cT.adding_to_class_list(s4)
 
-for i in class_1cT:
-    print(i.view_inf())
+if __name__ == '__main__':
+    for i in class_1cT:
+        print(i.view_inf())
