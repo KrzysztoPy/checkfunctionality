@@ -62,12 +62,6 @@ class Student(Person, ClassAtSchool):
         # print(f"Student number at jurnal: {self.number_at_jurnal}")
 
 
-class Teacher(Person):
-    def __init__(self, name, surname, age, position):
-        super().__init__(name, surname, age)
-        self.position = position
-
-
 s1 = Student("Krzysztof", "M", randint(16, 28), )
 s2 = Student("Władysław", "W", randint(16, 28), )
 s3 = Student("Józef", "S", randint(16, 28), )
