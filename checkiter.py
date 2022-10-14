@@ -55,11 +55,6 @@ class Student(Person, ClassAtSchool):
                f"Student class name: {self.class_at_school} \n" \
                f"Student number at jurnal: {self.number_at_jurnal}"
 
-        # print(f"Student name: {self.name}")
-        # print(f"Student surname: {self.surname}")
-        # print(f"Student age: {self.age}")
-        # print(f"Student class name: {self.class_at_school}")
-        # print(f"Student number at jurnal: {self.number_at_jurnal}")
 
 
 s1 = Student("Krzysztof", "M", randint(16, 28), )
