@@ -56,18 +56,18 @@ class Student(Person, ClassAtSchool):
                f"Student number at jurnal: {self.number_at_jurnal}"
 
 
-
-s1 = Student("Krzysztof", "M", randint(16, 28), )
-s2 = Student("Władysław", "W", randint(16, 28), )
-s3 = Student("Józef", "S", randint(16, 28), )
-s4 = Student("Gerwazy", "F", randint(16, 28), )
-
-class_1cT = ClassAtSchool("1cT")
-class_1cT.adding_to_class_list(s1)
-class_1cT.adding_to_class_list(s2)
-class_1cT.adding_to_class_list(s3)
-class_1cT.adding_to_class_list(s4)
-
 if __name__ == '__main__':
+
+    s1 = Student("Krzysztof", "M", randint(16, 28), )
+    s2 = Student("Władysław", "W", randint(16, 28), )
+    s3 = Student("Józef", "S", randint(16, 28), )
+    s4 = Student("Gerwazy", "F", randint(16, 28), )
+
+    class_1cT = ClassAtSchool("1cT")
+    class_1cT.adding_to_class_list(s1)
+    class_1cT.adding_to_class_list(s2)
+    class_1cT.adding_to_class_list(s3)
+    class_1cT.adding_to_class_list(s4)
+
     for i in class_1cT:
         print(i.view_inf())
